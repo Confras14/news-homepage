@@ -1,7 +1,11 @@
+import { Header } from "./components/Header";
+
+import './global.scss'
+
 export function App(){
   return(
     <>
-      <h1>Teste App</h1>
+      <Header />
     </>
   );
 }
