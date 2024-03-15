@@ -1,0 +1,23 @@
+:root {
+  --orange-400: #e9ab53;
+  --red-400: #f15e50;
+  --blue-900: #00001a;
+
+  --gray-100: #fffdfa;
+  --gray-300: #c5c6ce;
+  --gray-500: #5d5f79;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body, textarea, input, button {
+  font-size: .9375rem;
+  list-style: none;
+  line-height: 1;
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+}
