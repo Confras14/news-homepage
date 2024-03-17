@@ -1,12 +1,23 @@
 .app {
   padding: 1rem 1.75rem;
-  height: auto;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2 ;
 
-  & > main > div {
-    flex-direction: column;
-    justify-content: space-around;
-    margin-bottom: 4rem;
+  & > main {
+    & > div {
+      flex-direction: column;
+      justify-content: space-around;
+      margin-bottom: 4rem;
+    }
   }
+}
+
+.colorFilterBody{
+  background: var(--blue-900-Trans);
 }
 
 @media (min-width: 426px)  {

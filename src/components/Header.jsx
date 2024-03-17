@@ -7,7 +7,7 @@ import iconMenu from '../assets/images/icon-menu.svg'
 import iconMenuClose from '../assets/images/icon-menu-close.svg'
 
 
-export function Header() {
+export function Header({menuO}) {
   const [menuOpen, setMenuOpen] = useState(true)
 
   let classMenuOpen = style.iconsMenuOpened
@@ -15,6 +15,7 @@ export function Header() {
 
   function handleClickIcon() {
     setMenuOpen(!menuOpen)
+    menuO(menuOpen)
   }
 
   return (

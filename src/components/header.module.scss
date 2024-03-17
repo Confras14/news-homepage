@@ -71,15 +71,6 @@
   display: none;
 }
 
-.bodyForMenuOpen {
-  position: relative;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100%;
-  // background: var(--blue-900-Trans);
-}
-
 @media (min-width: 426px)  {
   .container {
     margin-bottom: 3.5rem;
