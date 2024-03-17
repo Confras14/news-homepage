@@ -1,5 +1,6 @@
 import { Header } from "./components/Header";
 import { MainNews } from "./components/MainNews";
+import { AsideNews } from "./components/AsideNews";
 import { TopNews } from "./components/TopNews";
 
 import './global.scss'
@@ -12,7 +13,10 @@ export function App(){
     <body className={style.app + ' ' + styleHeader.bodyForMenuOpen}>
       <Header />
       <main>
-        <MainNews />
+        <div>
+          <MainNews />
+          <AsideNews />
+        </div>
         <TopNews />
       </main>
     </body>
