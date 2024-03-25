@@ -1,12 +1,17 @@
-.app {
-  padding: 1rem 1.75rem;
-  position: relative;
-  top: 0;
-  left: 0;
+.colorFilterBody {
   height: 100%;
   width: 100%;
-  z-index: 2 ;
+  background: var(--blue-900-Trans);
+  position: relative;
+  top: 0;
+  right: 0;
+  position: fixed;
+}
 
+.app {
+  padding: 1rem 1.75rem;
+  z-index: 1;
+  
   & > main {
     & > div {
       flex-direction: column;
@@ -14,10 +19,6 @@
       margin-bottom: 4rem;
     }
   }
-}
-
-.colorFilterBody{
-  background: var(--blue-900-Trans);
 }
 
 @media (min-width: 426px)  {

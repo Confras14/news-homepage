@@ -18,15 +18,19 @@ export function App(){
   }
 
   return(
-    <body className={`${style.app} ${menuOpen ? style.colorFilterBody : ``}`}>
-      <Header menuO={handleMenu} />
-      <main>
-        <div>
-          <MainNews />
-          <AsideNews />
-        </div>
-        <TopNews />
-      </main>
-    </body>
+    <>
+      <div className={`${menuOpen ? style.colorFilterBody : ""}`}>
+      </div>
+      <section className={`${style.app}`}>
+          <Header menuO={handleMenu} />
+          <main>
+            <div>
+              <MainNews />
+              <AsideNews />
+            </div>
+            <TopNews />
+          </main>
+      </section>
+    </>
   );
 }
